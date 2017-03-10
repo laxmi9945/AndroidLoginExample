@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/simple"
+    >
+    <EditText
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:layout_marginTop="13dp"
+        android:id="@+id/editText"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/button"
+
+        android:onClick="button"/>
+
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="25dp"
+        android:id="@+id/tv"
+        android:textSize="20dp"
+        android:paddingLeft="5dp"
+        android:hint="Text will display here"
+        android:textColor="#ff00"
+        android:textStyle="italic"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="11dp" />
+
+   <AutoCompleteTextView
+       android:scrollbars="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/tv"
+       android:paddingTop="20dp"
+       android:paddingLeft="5dp"
+     android:id="@+id/auto"
+       android:hint="Enter country name"
+       android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv"
+        android:layout_marginStart="12dp"
+        android:textOff="off"
+        android:textOn="on"
+        android:text="ToggleButton1"
+        android:id="@+id/toggle1"
+        android:layout_alignBottom="@+id/toggle2"
+        android:layout_alignTop="@+id/toggle2" />
+
+        <ToggleButton
+            android:id="@+id/toggle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button"
+            android:layout_below="@+id/auto"
+            android:layout_marginLeft="20dp"
+            android:text="ToggleButton2"
+            android:textOff="off"
+            android:textOn="on" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_marginLeft="70dp"
+            android:onClick="button2"/>
+    </LinearLayout>
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:textStyle="italic"
+        android:textColor="#ff00"
+        android:textSize="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bridgelabz"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textStyle="italic" />
+</RelativeLayout>
