@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:id="@+id/et1"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email id"
+        android:id="@+id/et2"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:id="@+id/et3"/>
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter MobileNo"
+        android:id="@+id/et4"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:onClick="Save"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="Update"
+        android:id="@+id/updateButton"/>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="Delete"
+        android:id="@+id/deleteButton"/>
+
+
+
+</LinearLayout>
