@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SharedPFTest</string>
+    <string name="Enter_Name">Name</string>
+    <string name="Enter_First_Name">First Name</string>
+    <string name="Enter_Last_Name">Last Name</string>
+    <string name="Enter_Email_Id">Email ID</string>
+    <string name="Enter_Mobile_Number">Mobile Number</string>
+    <string name="Enter_Address">Address</string>
+    <string name="Enter_DOB">Date</string>
+    <string name="Enter_Password">Password</string>
+    <string name="Enter_UserName">UserName</string>
+    <string name="Enter_Full_Name">FullName</string>
+    <string name="Save">Save</string>
+    <string name="Email">Email</string>
+    <string name="Enter_Email">Email</string>
+    <string name="Forgot_Password">Password</string>
+    <string name="Forgot_Passord">Forgot Password</string>
+    <string name="Password_Forgot">Forgot password?</string>
+    <string name="Login_Button">Login</string>
+    <string name="Register_Button">Register</string>
+    <string name="Enter_Email_Or_UserName">Email</string>
+    <string name="Register_TextView">No account yet? Create one</string>
+    <string name="Already_acc">Already a member? Login</string>
+</resources>
