@@ -1,119 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d9ff00"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
+    android:background="@drawable/blur"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
     >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="40dp"
-        android:weightSum="1">
+
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:layout_marginLeft="115dp"
-        android:layout_marginRight="115dp"
-        android:src="@drawable/registration"/>
-        </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="40dp"
-        android:weightSum="1">
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fullname"
-            android:layout_weight="0.5"/>
+        android:layout_marginLeft="75dp"
+        android:src="@drawable/registration"/>
+
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_marginTop="20dp"
             android:id="@+id/name_edittext"
+            android:background="@drawable/registrationedittext"
+            android:hint="@string/register_Name"
             />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/emailid"
-            android:layout_weight="0.5"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_marginTop="10dp"
+
             android:id="@+id/email_Edittext"
+            android:hint="@string/enter_email"
+            android:background="@drawable/registrationedittext"
             />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/enter_password"
-            android:layout_weight="0.5"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:id="@+id/password_edittext"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_password"
+            android:background="@drawable/registrationedittext"
             />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/mobilenumber"
-            android:layout_weight="0.5"/>
         <android.support.v7.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
             android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/registrationedittext"
+            android:hint="@string/mobilenumber"
             android:id="@+id/mobilenumber_edittext"
             />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
         <android.support.v7.widget.AppCompatButton
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/save_button"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/loginbtn"
             android:text="@string/save"
-            android:layout_marginLeft="125dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="1">
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"/>
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -124,5 +71,4 @@
             android:id="@+id/allreadyacc_textview"
             android:textColor="#ff00"
            />
-    </LinearLayout>
 </LinearLayout>

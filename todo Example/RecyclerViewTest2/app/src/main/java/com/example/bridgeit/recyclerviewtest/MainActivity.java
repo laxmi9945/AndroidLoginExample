@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        View view=new View(getApplicationContext());
         gridview = (GridView) findViewById(R.id.gridview);
-        gridview.setNumColumns(2);
+        ListView listView=(ListView)findViewById(R.id.listview);
+        gridview.setNumColumns(3);
 
         imageAdapter = new ImageAdapter(this);
 
@@ -31,9 +32,7 @@ public class MainActivity extends AppCompatActivity {
         {
             public void onItemClick(AdapterView<?> parent,
                                     View v, int position, long id){
-                // Send intent to SingleViewActivity
                 Intent i = new Intent(getApplicationContext(), SingleViewActivity.class);
-                // Pass image index
                 i.putExtra("id", position);
                 startActivity(i);
             }
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                     isGrid = false;
                 }
                 else{
-                    gridview.setNumColumns(2);
+                    gridview.setNumColumns(3);
                     imageAdapter.notifyDataSetChanged();
                     isGrid = true;
                 }
